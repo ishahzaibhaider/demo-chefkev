@@ -4,110 +4,84 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chef Kevin Winston | Private Chef, Atlanta | As Seen On Food Network</title>
-<style>
-  :root{--blk:#101010;--panel:#1a1a1a;--gold:#d4af37;--txt:#f2f2f2;--mut:#a8a8a8;--cream:#f7f3ea}
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:Georgia,'Times New Roman',serif;color:var(--txt);background:var(--blk);line-height:1.65}
-  .sans{font-family:Arial,Helvetica,sans-serif}
-  header{position:sticky;top:0;background:rgba(16,16,16,.96);border-bottom:1px solid #2a2a2a;z-index:10}
-  nav{max-width:1080px;margin:auto;display:flex;justify-content:space-between;align-items:center;padding:16px 24px}
-  .logo{letter-spacing:3px;color:var(--gold);font-size:1.1rem}
-  nav a{color:var(--txt);text-decoration:none;margin-left:22px;font-size:.93rem}
-  nav a:hover{color:var(--gold)}
-  .hero{max-width:1080px;margin:auto;padding:90px 24px 60px;text-align:center}
-  .tv{display:inline-block;border:1px solid var(--gold);color:var(--gold);padding:7px 18px;border-radius:30px;font-size:.8rem;letter-spacing:2px;margin-bottom:24px}
-  .hero h1{font-size:clamp(2.2rem,6vw,4rem);line-height:1.15}
-  .hero h1 span{color:var(--gold);font-style:italic}
-  .hero p{color:var(--mut);max-width:580px;margin:18px auto 30px;font-size:1.12rem}
-  .btn{display:inline-block;background:var(--gold);color:#181818;padding:14px 38px;text-decoration:none;font-weight:bold;letter-spacing:1px;border:none;font-size:1rem;cursor:pointer}
-  .btn:hover{background:#e6c14d}
-  .btn.ghost{background:transparent;border:1px solid var(--gold);color:var(--gold);margin-left:12px}
-  section{max-width:1080px;margin:auto;padding:64px 24px}
-  h2{font-size:2rem;margin-bottom:8px;letter-spacing:1px}
-  .sub{color:var(--mut);margin-bottom:38px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
-  .card{background:var(--panel);border:1px solid #2a2a2a;padding:30px}
-  .card h3{color:var(--gold);letter-spacing:1px;margin-bottom:10px}
-  .card p{color:var(--mut);font-size:.95rem}
-  .price{font-size:1.25rem;margin-top:14px}
-  .feat{background:var(--cream);color:#222}
-  .feat-inner{max-width:1080px;margin:auto;padding:60px 24px;display:flex;flex-wrap:wrap;gap:30px;align-items:center;justify-content:space-between}
-  .feat h2{color:#1d1d1d}
-  .feat p{color:#5f5b50;max-width:560px}
-  .feat .tag{background:#1d1d1d;color:var(--gold);padding:10px 22px;letter-spacing:2px;font-size:.85rem}
-  form{background:var(--panel);border:1px solid #2a2a2a;padding:34px;max-width:640px;margin:auto}
-  label{display:block;margin:15px 0 6px;font-size:.88rem;letter-spacing:1px;color:var(--mut)}
-  input,select,textarea{width:100%;background:#121212;border:1px solid #333;color:var(--txt);padding:12px;font-size:1rem}
-  input:focus,select:focus,textarea:focus{outline:1px solid var(--gold)}
-  .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  @media(max-width:560px){.row{grid-template-columns:1fr}}
-  .note{font-size:.85rem;color:var(--mut);margin-top:14px}
-  .ok{display:none;background:#142417;border:1px solid #2f7a3d;color:#8fdd9d;padding:15px;margin-top:18px;text-align:center}
-  footer{border-top:1px solid #2a2a2a;text-align:center;padding:32px;color:#5c5c5c;font-size:.85rem;letter-spacing:1px}
-</style>
+<meta name="description" content="Atlanta private chef for dinner parties, cooking demos, meal prep and brand events. As seen on Food Network, Supermarket Stakeout S4.">
+<meta property="og:title" content="Chef Kevin Winston | Private Chef, Atlanta | As Seen On Food Network">
+<meta property="og:description" content="Atlanta private chef for dinner parties, cooking demos, meal prep and brand events. As seen on Food Network, Supermarket Stakeout S4.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🍽️%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <nav>
-    <div class="logo sans">CHEF KEVIN WINSTON</div>
-    <div class="sans"><a href="#experiences">Experiences</a><a href="#tv">On TV</a><a href="#inquire">Inquire</a></div>
+    <a class="logo" href="#top">CHEF KEVIN WINSTON</a>
+    <button class="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    <div class="navlinks">
+      <a href="#services">Experiences</a>
+      <a href="#work">Real Work</a>
+      <a href="#how">How It Works</a>
+      <a class="cta" href="#book">Check My Date</a>
+    </div>
   </nav>
 </header>
 
-<div class="hero">
-  <div class="tv sans">AS SEEN ON FOOD NETWORK · SUPERMARKET STAKEOUT S4</div>
-  <h1>Private Dining, <span>Done Right</span></h1>
+<div class="hero" id="top">
+  <span class="eyebrow">As Seen On Food Network · Supermarket Stakeout S4</span>
+  <h1>Private Dining, <em>Done Right</em></h1>
   <p>Atlanta private chef for dinner parties, cooking demos, meal prep and brand events. Restaurant quality at your table, built around your menu.</p>
-  <a class="btn sans" href="#inquire">CHECK MY DATE</a>
-  <a class="btn ghost sans" href="#experiences">SEE EXPERIENCES</a>
+  <a class="btn" href="#book">Check My Date</a>
+  <a class="btn ghost" href="#work">See Real Work</a>
+  <div class="badges"><span class="badge">📺 Food Network featured</span><span class="badge">📍 Atlanta, GA</span><span class="badge">🍽️ Dinner parties and demos</span><span class="badge">🤝 Brand events</span></div>
 </div>
 
-<section id="experiences">
-  <h2>EXPERIENCES</h2>
-  <p class="sub">Clear packages so guests know exactly what they are booking.</p>
-  <div class="grid">
-    <div class="card"><h3 class="sans">DINNER PARTY</h3><p>Multi course plated dinner in your home. Menu consult, shopping, service and cleanup included.</p><div class="price">From $85 per guest</div></div>
-    <div class="card"><h3 class="sans">COOKING DEMO</h3><p>Interactive class for date nights, teams and parties. Cook together, eat together.</p><div class="price">From $65 per guest</div></div>
-    <div class="card"><h3 class="sans">WEEKLY MEAL PREP</h3><p>Fridge stocked with chef made meals tailored to your goals and macros.</p><div class="price">From $300 per week</div></div>
-    <div class="card"><h3 class="sans">BRAND EVENTS</h3><p>Appearances, brand partnerships and content collaborations. As seen on Food Network.</p><div class="price">Custom quote</div></div>
+<section id="services">
+  <div class="container">
+    <h2 class="reveal">Experiences</h2>
+    <p class="sub reveal">Clear packages so guests know exactly what they are booking.</p>
+    <div class="grid"><div class="card reveal"><div class="ico">🥂</div><h3>DINNER PARTY</h3><p>Multi course plated dinner in your home. Menu consult, shopping, service and cleanup included.</p><div class="price">From $85 per guest</div></div><div class="card reveal"><div class="ico">👨‍🍳</div><h3>COOKING DEMO</h3><p>Interactive class for date nights, teams and parties. Cook together, eat together.</p><div class="price">From $65 per guest</div></div><div class="card reveal"><div class="ico">🥗</div><h3>WEEKLY MEAL PREP</h3><p>Fridge stocked with chef made meals tailored to your goals and macros.</p><div class="price">From $300 per week</div></div><div class="card reveal"><div class="ico">📺</div><h3>BRAND EVENTS</h3><p>Appearances, brand partnerships and content collaborations.</p><div class="price">Custom quote</div></div></div>
   </div>
 </section>
 
-<div class="feat" id="tv">
-  <div class="feat-inner">
-    <div>
-      <h2>FROM THE FOOD NETWORK TO YOUR DINING ROOM</h2>
-      <p>Featured on Supermarket Stakeout Season 4. Trusted by 20,000 plus followers for dinner parties, demos and unforgettable plates across Atlanta.</p>
-    </div>
-    <div class="tag sans">SUPERMARKET STAKEOUT · SEASON 4</div>
+<section id="work" style="background:var(--panel)">
+  <div class="container center">
+    <h2 class="reveal">Real Work, Straight From Instagram</h2>
+    <p class="sub reveal">Plates, parties and TV moments posted by Chef Kev himself.</p>
+    <div class="iggrid"><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chefkev4real/reel/DO3nHiqDgtG/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chefkev4real/reel/DXHnUG9ABsm/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chefkev4real/reel/DUtOAiQDp0T/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chefkev4real/reel/DZadA6kMjMd/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chefkev4real/p/DZUquF-S5QF/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div><div class="reveal"><blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/chefkev4real/p/DZLtslImKaX/" data-instgrm-version="14" style="background:transparent;border:1px solid var(--line);border-radius:12px;box-shadow:none;margin:0;padding:0;"></blockquote></div></div>
+    <p class="ig-note">Live posts from <a href="https://www.instagram.com/chefkev4real/" target="_blank" rel="noopener">@chefkev4real</a>, always up to date.</p>
   </div>
-</div>
-
-<section id="inquire">
-  <h2 style="text-align:center">BOOK YOUR EVENT</h2>
-  <p class="sub" style="text-align:center">Tell me about your event. You get a menu proposal and quote within 24 hours.</p>
-  <form onsubmit="event.preventDefault();this.querySelector('.ok').style.display='block';this.reset()">
-    <div class="row">
-      <div><label>NAME</label><input type="text" required></div>
-      <div><label>EMAIL OR PHONE</label><input type="text" required></div>
-    </div>
-    <div class="row">
-      <div><label>EXPERIENCE</label><select><option>Dinner party</option><option>Cooking demo</option><option>Weekly meal prep</option><option>Brand event or collab</option></select></div>
-      <div><label>EVENT DATE</label><input type="date"></div>
-    </div>
-    <div class="row">
-      <div><label>GUEST COUNT</label><select><option>2 to 4</option><option>5 to 10</option><option>11 to 20</option><option>20 plus</option></select></div>
-      <div><label>BUDGET RANGE</label><select><option>$300 to $600</option><option>$600 to $1200</option><option>$1200 plus</option></select></div>
-    </div>
-    <label>MENU IDEAS, DIETARY NOTES, OCCASION</label><textarea rows="4" placeholder="Anniversary dinner for 6, pescatarian friendly, love Cajun flavors"></textarea>
-    <div style="text-align:center;margin-top:26px"><button class="btn sans" type="submit">SEND INQUIRY</button></div>
-    <p class="note">A deposit locks your date once the menu is agreed. Calendar reminders go out automatically.</p>
-    <div class="ok sans">Inquiry received. Expect a menu proposal and quote within 24 hours.</div>
-  </form>
 </section>
 
-<footer class="sans">
-  CHEF KEVIN WINSTON · PRIVATE CHEF · ATLANTA GA · DEMO PREVIEW BUILT FOR CHEF KEV · DESIGN CONCEPT, NOT THE LIVE BUSINESS SITE
+<section id="how">
+  <div class="container">
+    <h2 class="reveal">How It Works</h2>
+    <p class="sub reveal">From inquiry to plated in three steps.</p>
+    <div class="steps"><div class="step reveal"><b>Tell me about your event</b><p>Date, guest count, budget and the flavors you love.</p></div><div class="step reveal"><b>Get a menu proposal</b><p>A tailored menu and quote within 24 hours.</p></div><div class="step reveal"><b>Lock the date</b><p>A deposit secures your event. Reminders go out automatically.</p></div></div>
+  </div>
+</section>
+
+<section id="book" style="background:var(--panel)">
+  <div class="container center">
+    <h2 class="reveal">Book Your Event</h2>
+    <p class="sub reveal">Tell me about your event. You get a menu proposal and quote within 24 hours.</p>
+    <form id="bookform" novalidate>
+      <div class="row2"><div><label for="name">Name</label><input type="text" id="name" name="name" placeholder="Your name" required></div><div><label for="contact">Email or phone</label><input type="text" id="contact" name="contact" placeholder="you@email.com" required></div></div><div class="row2"><div><label for="exp">Experience</label><select id="exp" name="exp"><option>Dinner party</option><option>Cooking demo</option><option>Weekly meal prep</option><option>Brand event or collab</option></select></div><div><label for="date">Event date</label><input type="date" id="date" name="date" placeholder=""></div></div><div class="row2"><div><label for="guests">Guest count</label><select id="guests" name="guests"><option>2 to 4</option><option>5 to 10</option><option>11 to 20</option><option>20 plus</option></select></div><div><label for="budget">Budget range</label><select id="budget" name="budget"><option>$300 to $600</option><option>$600 to $1200</option><option>$1200 plus</option></select></div></div><div><label for="notes">Menu ideas, dietary notes, occasion</label><textarea id="notes" name="notes" rows="3" placeholder="Anniversary dinner for 6, pescatarian friendly, love Cajun flavors"></textarea></div>
+      <div style="text-align:center;margin-top:26px"><button class="btn" type="submit">Send Inquiry</button></div>
+      <p class="formerr">Please fill in the highlighted fields.</p>
+      <p class="note">A deposit locks your date once the menu is agreed. Calendar reminders go out automatically.</p>
+      <div class="ok">Inquiry received. Expect a menu proposal and quote within 24 hours.</div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p class="fsoc"><a href="https://www.instagram.com/chefkev4real/" target="_blank" rel="noopener">Instagram @chefkev4real</a></p>
+  <p>Chef Kevin Winston · Private Chef · Atlanta GA</p>
+  <p>&copy; <span id="year"></span> Chef Kevin Winston. Demo preview, a design concept and not the live business site.</p>
 </footer>
+
+<script async src="https://www.instagram.com/embed.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
